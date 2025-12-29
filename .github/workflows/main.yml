@@ -21,8 +21,8 @@ jobs:
     - name: npm run build
       run: npm run build
 
-    - name: Download a Build Artifact
-      uses: actions/download-artifact@v7.0.0
+    - name: Upload a Build Artifact
+      uses: actions/upload-artifact@v6.0.0
       with:
        name: build-${{ github.run_id }}
        path: build/
